@@ -3,9 +3,9 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <title>Steven's Lab 2 Website</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
 
   <body>
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-      <br/>
+      <br>
       <div>Here are my hobbies:</div>
       <details>
         <summary>Hobbies</summary>
@@ -48,50 +48,66 @@
     </main>
 
     <section>
-      <br/>
+      <h3>Some Media</h3>
       <div>Here are some photos of my dog, his name is Benji.</div>
-      <img src="images/baby_benji.jpeg" height="400"/>
-      <img src="images/pooping_benji.jpeg" height="400"/>
-      <img src="images/burrito_benji.jpeg" height="400"/>
-      <br/>
-      <br/>
+      <img src="images/baby_benji.jpeg" height="400" alt="Baby Benji">
+      <img src="images/pooping_benji.jpeg" height="400" alt="Pooping Benji">
+      <img src="images/burrito_benji.jpeg" height="400" alt="Benji as burrito">
+      <br>
+      <br>
       <div>
         Here is my favorite song currently. 
         <div><b>Blueming - IU</b></div>
       </div>
       <audio controls>
-        <source src="audio/IU-Blueming.mp3" type="audio/mp3"/>
+        <source src="audio/IU-Blueming.mp3" type="audio/mp3">
       </audio>
-      <br/>
-      <br/>
+      <br>
+      <br>
       <div>
         Here is my favorite music video currently. 
         <div><b>Eight(Live) - IU</b></div>
       </div>
       <video height="500" controls>
-        <source src="videos/IU-Eight(Live).mp4" type="video/mp4"/>
+        <source src="videos/IU-Eight(Live).mp4" type="video/mp4">
       </video>
     </section>
 
-    <hr/>
+    <hr>
 
-    <section name="Quiz">
+    <div>
       <form>
         <fieldset>
         <legend>Quiz</legend>
-          <label>What is my favorite dog breed?</label><br>
-          <input type="text"><br><br>
-          <label>What is my dog's name?</label><br>
-          <input type="text"><br><br>
-          <label>
-            Based on the song and music video, 
-            who is my favorite musical artist??
-          </label><br>
-          <input type="text"><br><br>
-          <label>Am I a CS major?</label>
-          <input type="checkbox"><br><br>
-          <label>What is today's date?</label>
-          <input type="date"><br><br>
+          <fieldset>
+          <legend>Basic Questions</legend>
+            <label>What is my favorite dog breed?</label><br>
+            <input type="text"><br><br>
+
+
+            <label for="name-select">What is my dog's name?</label><br>
+            <select id="name-select">
+                <option value="">--Please choose a name--</option>
+                <option value="mikey">Mikey</option>
+                <option value="benji">Benji</option>
+                <option value="lucy">Lucy</option>
+                <option value="doggy">Doggy</option>
+                <option value="mocha">Mocha</option>
+                <option value="ned">Ned</option>
+            </select><br><br>
+
+
+            <label>
+              Based on the song and music video, 
+              who is my favorite musical artist??
+            </label><br>
+            <input type="text"><br><br>
+            <label>Am I a CS major?</label>
+            <input type="checkbox"><br><br>
+            <label>What is today's date?</label>
+            <input type="date"><br><br>
+          </fieldset>
+
           <fieldset>
           <legend>What is my favorite class this quarter?</legend>
             <div>
@@ -105,14 +121,35 @@
               <label for="167">CSE 167</label><br>
             </div>
           </fieldset>
+
+          <fieldset>
+          <legend>Your Opinion</legend>
+
+            <label>
+              What would be your favorite class?
+            </label>
+            <input list="fav-class-choice">
+
+            <datalist id="fav-class-choice">
+                <option value="CSE 101">
+                <option value="CSE 110">
+                <option value="CSE 130">
+                <option value="CSE 167">
+            </datalist><br><br>
+
+            <div>Let me know if you have any feedback!</div>
+            <textarea rows="5" cols="33"></textarea>
+          </fieldset><br>
+          
+          <label>Did you enjoy this website?</label><br>
+          <button>
+            Yes!
+          </button>
         </fieldset>
       </form><br>
+    </div>
 
-      <div>Write me something!</div>
-      <textarea rows="5" cols="33"></textarea>
-    </section>
-
-    <hr/>
+    <hr>
 
     <footer>
       <nav>
@@ -120,11 +157,11 @@
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             Subscribe to my Youtube
           </a>
-          <br/>
+          <br>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             Follow me on Twitch
           </a>
-          <br/>
+          <br>
           <a href="https://www.linkedin.com/in/stevenkhaw/">
             Add me on LinkedIn
           </a>
