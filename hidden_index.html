@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Steven's Lab 2 Website</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>My First HTML Website</h1>
+      <h2><i>Join me on my learning experience!</i></h2>
+      <p>
+        A little about myself. My name is <em>Steven Khaw</em>, and I am a third
+        year Math-CS major at UCSD. My favorite color is 
+        <span style="color:blue">blue</span>. I am currently taking 4
+        CSE courses at UCSD. These are my current classes listed from 
+        most to least favorite.
+      </p>
+      <ol>
+        <li>CSE 110</li>
+        <li>CSE 130</li>
+        <li>CSE 167</li>
+        <li>CSE 101</li>
+      </ol>
+      <strong>
+        Remember that my favorite dog breed is a Corgi! (There will be a quiz)
+      </strong>
+    </header>
+
+    <main>
+      <br>
+      <div>Here are my hobbies:</div>
+      <details>
+        <summary>Hobbies</summary>
+        <ul>
+          <li><b>League of Legends</b></li>
+          <li>Age of Empires IV</li>
+          <li>Valorant</li>
+          <li>Overwatch 2</li>
+          <li>Custom Mechanical Keyboards</li>
+          <li>Music</li>
+        </ul>
+      </details>
+    </main>
+
+    <section>
+      <h3>Some Media</h3>
+      <div>Here are some photos of my dog, his name is Benji.</div>
+      <img src="images/baby_benji.jpeg" height="400" alt="Baby Benji">
+      <img src="images/pooping_benji.jpeg" height="400" alt="Pooping Benji">
+      <img src="images/burrito_benji.jpeg" height="400" alt="Benji as burrito">
+      <br>
+      <br>
+      <div>
+        Here is my favorite song currently. 
+        <div><b>Blueming - IU</b></div>
+      </div>
+      <audio controls>
+        <source src="audio/IU-Blueming.mp3" type="audio/mp3">
+      </audio>
+      <br>
+      <br>
+      <div>
+        Here is my favorite music video currently. 
+        <div><b>Eight(Live) - IU</b></div>
+      </div>
+      <video height="500" controls>
+        <source src="videos/IU-Eight(Live).mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <hr>
+
+    <div>
+      <form>
+        <fieldset>
+        <legend>Quiz</legend>
+          <fieldset>
+          <legend>Basic Questions</legend>
+            <label>What is my favorite dog breed?</label><br>
+            <input type="text"><br><br>
+
+
+            <label for="name-select">What is my dog's name?</label><br>
+            <select id="name-select">
+                <option value="">--Please choose a name--</option>
+                <option value="mikey">Mikey</option>
+                <option value="benji">Benji</option>
+                <option value="lucy">Lucy</option>
+                <option value="doggy">Doggy</option>
+                <option value="mocha">Mocha</option>
+                <option value="ned">Ned</option>
+            </select><br><br>
+
+
+            <label>
+              Based on the song and music video, 
+              who is my favorite musical artist??
+            </label><br>
+            <input type="text"><br><br>
+            <label>Am I a CS major?</label>
+            <input type="checkbox"><br><br>
+            <label>What is today's date?</label>
+            <input type="date"><br><br>
+          </fieldset>
+
+          <fieldset>
+          <legend>What is my favorite class this quarter?</legend>
+            <div>
+              <input type="radio" id="101" name="class">
+              <label for="101">CSE 101</label><br>
+              <input type="radio" id="110" name="class">
+              <label for="110">CSE 110</label><br>
+              <input type="radio" id="130" name="class">
+              <label for="130">CSE 130</label><br>
+              <input type="radio" id="167" name="class">
+              <label for="167">CSE 167</label><br>
+            </div>
+          </fieldset>
+
+          <fieldset>
+          <legend>Your Opinion</legend>
+
+            <label>
+              What would be your favorite class?
+            </label>
+            <input list="fav-class-choice">
+
+            <datalist id="fav-class-choice">
+                <option value="CSE 101">
+                <option value="CSE 110">
+                <option value="CSE 130">
+                <option value="CSE 167">
+            </datalist><br><br>
+
+            <div>Let me know if you have any feedback!</div>
+            <textarea rows="5" cols="33"></textarea>
+          </fieldset><br>
+          
+          <label>Did you enjoy this website?</label><br>
+          <button>
+            Yes!
+          </button>
+        </fieldset>
+      </form><br>
+    </div>
+
+    <hr>
+
+    <footer>
+      <nav>
+        <h3>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            Subscribe to my Youtube
+          </a>
+          <br>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            Follow me on Twitch
+          </a>
+          <br>
+          <a href="https://www.linkedin.com/in/stevenkhaw/">
+            Add me on LinkedIn
+          </a>
+        </h3>
+      </nav>
+    </footer>
+
+  </body>
+
+</html>
