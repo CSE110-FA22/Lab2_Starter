@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="author" content="Yi Yao">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset= "UTF-8">
+  </head>
+
+
+  <body>
+    <main id="top">
+        <h1> Meeting Minutes </h1>
+        <p>Meeting minutes are notes recorded during a meeting so that anyone who missed the meeting can easily catch up, or if someone needs to reference back to a meeting that happened a little while ago they can jog their memory.</p>
+    </main>
+    <nav>
+        <ul class = "navigation">
+            <li><a href="#today" class = "nav-link">Today Meeting</a> </li>
+            <li><a href="#recording" class = "nav-link">Recording</a> </li>
+            <li><a href="#comments" class = "nav-link">Comments</a> </li>
+        </ul>
+    </nav>
+    <!-- Today's Meeting Guide -->
+    <section class="today" id="today">
+        <div class="date">
+            <h4>Meeting Date: <i>10/7/2022 3PM</i> </h4>
+        </div>
+        <div class="attendance-list">
+            <details>
+                <summary><em>Want to Join us?</em></summary>
+                <form action="./action_page.php" method="get">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+
+                    <input type="submit" value="Submit">
+                  </form>
+            </details>
+            <details>
+                <summary><b>Attendance list</b></summary>
+                <ul>
+                    <li>P1</li>
+                    <li>P2</li>
+                </ul>
+            </details>
+        </div>
+
+        <!-- Meeting Guide -->
+        <div class="Meeting-Guide">
+            <h2>Meeting-Guide(Main): </h2>
+            <p>Agenda of what the meeting will cover</p>
+            <dl>
+                <dt>Area1</dt>
+                <dd>taks1</dd>
+                <dd>take2</dd>
+
+                <dt>Area2</dt>
+                <dd>task1</dd>
+            </dl>
+        </div>
+
+        <!-- Last Topic -->
+        <div class = "lasttopic">
+            <footer>
+                <strong>Last topic:</strong>
+                <p>Things that were unfinished business from last meeting</p>
+                <ol>    
+                    <li>Goal1</li>
+                    <li>Goal2</li>
+                    <li>Goal3</li>
+                </ol>
+            </footer>
+        </div>
+
+        <!-- New Business -->
+        <div class = "newbusiness">
+            <header>
+                <h3>Our Future!!! <span style="color: rgb(255, 0, 0);">Brainstorm</span> </h3>
+                <p>Things that are new business that need to be talked about</p>
+                <form action="./action_page.php" method="get">
+                    <label for="idea">Which one you most interesting?</label>
+                    <input list="ideas" name="idea" id="idea">
+                    <datalist id="ideas">
+                      <option value="idea1">
+                      <option value="idea2">
+                      <option value="idea3">
+                    </datalist>
+                    <input type="submit"><br>
+                </form>                  
+            </header>
+        </div>
+    </section>
+
+    <section class="recording" id="recording">
+        <div class="recorded">
+            <fieldset>
+                <legend>Recording: </legend>
+                <audio controls>
+                    <source src="./Demo.mp4" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <br><br>
+                <video controls>
+                    <source src="./Demo.mp4" type="video/mp4">
+                    Your browser does not support the audio tag.
+                </video>
+                <img src="./DFS.jpg" alt = "UCSD">
+                <br><br>
+                <label for = "downloadtype">Download: </label>
+                <select id="downloadtype">
+                    <option value = "video">Video</option>
+                    <option value = "audio">Audio</option>
+                    <option value = "picture">Picture</option>
+                </select>
+                <button type="button"> Download </button>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- Comment -->
+    <section class="comments" id="comments">
+        <div class="comments">
+            <hr>
+            <h2>Write Something!</h2>
+            <form action="./action_page.php" method="get">
+                <label for="comment">Comment:</label>
+                <br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+
+        </div>
+        <div class="Pictures">
+            <a href="#top">Back to Top</a>
+            <br><br>
+            <img src="./UCSD.jpg" alt = "UCSD">
+        </div>
+    </section>
+  </body>
+</html>
+
