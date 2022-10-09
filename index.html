@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Allo!</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="https://a.slack-edge.com/5f35cf0/img/icons/favicon-32-ua.png">
+</head>
+
+<body>
+  <header>
+    <h1>Team Minutes</h1>
+    <hr>
+    <h3>Navigation</h3>
+    <nav>
+      <a href="#first">First meeting</a>
+    </nav>
+  </header>
+  <main>
+    <div style="border:1px solid black;">
+      <h2 id="first"><u>10/6/22 Meeting</u></h2>
+      <strong>Attendees:</strong>
+      <ul style="background-color: azure;">
+        <li>Nathaniel</li>
+        <li>Shubham</li>
+        <li>Mandeep</li>
+        <li>Timothy</li>
+        <li>Jiayia</li>
+        <li>Danny</li>
+        <li>Hariz</li>
+        <li>Yiyu</li>
+        <li>Ira</li>
+        <li>Yi</li>
+      </ul>
+      <br>
+      <strong>Topics Discussed:</strong>
+      <ol style="background-color: aliceblue;">
+        <li>
+          <details>
+            <summary><em>Introducing ourselves</em></summary>
+            <p>We each took turns stating out major, year, and a fact
+              about
+              ourselves</p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary><em>What kind of roles will be available</em></summary>
+            <p>There will be a few roles assigned:
+              <b>development, QA,
+                and design</b>
+            </p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary><em>Meeting time</em></summary>
+            <p>We could not meet again at the same time in the future, and will
+              discuss one
+            <i>Slack</i> when to meet next time</p>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </main>
+  <footer>
+    <h3>Voided input</h3>
+    <form>
+      <fieldset>
+        <legend>How's your day on <input type="date"></legend>
+        <input type="radio" id="1" name="survey">
+        <label for="1">Perfect!</label><br>
+        <input type="radio" id="2" name="survey">
+        <label for="2">Good</label><br>
+        <input type="radio" id="3" name="survey">
+        <label for="3">Neutral</label><br>
+        <input type="radio" id="4" name="survey">
+        <label for="4">Bad...</label><br>
+        <input type="radio" id="5" name="survey">
+        <label for="5">Custom: </label><input type="text"><br>
+        <input type="radio" id="6" name="survey">
+        <label for="6">In case you want to write more: </label><textarea></textarea>
+      </fieldset>
+      <span style="background-color:blanchedalmond">Thoughts?<br>
+        <input list="list">
+        <datalist id="list">
+          <option>Too many thoughts...</option>
+          <option>Not too many, not too few!</option>
+          <option>Head empty</option>
+        </datalist>
+      </span>
+      <select>
+        <option>and I want more!</option>
+        <option>and that's just right!</option>
+        <option>and I wish I had less...</option>
+      </select>
+      <br>
+      <br>
+      <div>
+        <input type="checkbox">
+        <label>You have seen 40 html elements</label><br>
+        <input type="checkbox">
+        <label>You have pressed all buttons</label><br>
+        <input type="checkbox">
+        <label>You had a good day</label><br>
+      </div>
+      <button type="reset">Void the input!</button>
+    </form>
+    <section>
+      <h4>Even more random: one of my favorite DDR songs</h4>
+      <audio controls>
+        <source src="/MAX300aud.ogg">
+        Audio to the song.
+      </audio>
+      <br>
+      <img src="/MAX300pic.png" alt="Cover of the song">
+      <br>
+      <video controls>
+        <source src="/MAX300vid.mp4">
+        The stepchart of the song.
+      </video>
+    </section>
+  </footer>
+</body>
+
+</html>
