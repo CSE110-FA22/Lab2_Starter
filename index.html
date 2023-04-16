@@ -15,6 +15,7 @@
         <ol>
           <li><a href="#Attendance">Roster</a></li>
           <li><a href="#Brainstorm">Ideas</a></li>
+          <li><a href="#Models">Ideas</a></li>
         </ol>
       </nav>
     </header> <hr>
@@ -22,9 +23,12 @@
     <main>
       <section id="Attendance">
         <h2>Attendance</h2>
-        <audio controls>
-          <source src="" type="audio/mpeg">
-        </audio>
+        <details>
+          <summary>Welcome Audio</summary>
+          <audio controls>
+            <source src="sounds/welcome.mp3" type="audio/mpeg">
+          </audio>
+        </details>
         <p><ul>
           <li>Bob F. Allan</li>
           <li>Kelly J. Burner</li>
@@ -45,13 +49,58 @@
           <li><i>Wooden Straws</i></li>
           <li><em>Concrete Straws</em></li>
         </ul></p>
+        <video width="300" height="300" controls>
+          <source src="video/timer.mp4" type="video/mp4">
+        </video>
       </section> <hr>
 
       <section id="Models">
         <h2>Prototypes</h2>
-        <img src="https://i.ebayimg.com/images/g/974AAOSw8adchiO7/s-l1600.jpg", alt="https://www.allrecipes.com/thmb/iXKYAl17eIEnvhLtb4WxM7wKqTc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/240376-homemade-pepperoni-pizza-Beauty-3x4-1-6ae54059c23348b3b9a703b6a3067a44.jpg" width="400" height="400">
+        <img src="screenshots/straws.jpg", alt="screenshots/backup.jpg" width="400" height="400">
+        <video>
         <p></p>
       </section> <hr>
+
+      <form>
+        <fieldset>
+          <legend>Contact Me</legend>
+          <label for="name">Your Name</label> <br>
+          <input type="text"> <br>
+          <label for="date">Today's Date</label> <br>
+          <input type="date"> <br>
+          <label for="error">Issues</label> <br>
+          <select name="Sections" id="Parts">
+            <option value="Roster">Roster</option>
+            <option value="Brainstorm">Ideas</option>
+            <option value="Models">Models</option>
+          </select> <br>
+          <labal for="school">UC Campus</labal> <br>
+          <input list="schools" id="school" name="school">
+          <datalist id="schools">
+            <option value="UCLA"></option>
+            <option value="UCB"></option>
+            <option value="UCSD"></option>
+            <option value="UCI"></option>
+            <option value="UCSB"></option>
+            <option value="UCSC"></option>
+            <option value="UCD"></option>
+            <option value="UCR"></option>
+            <option value="UCM"></option>
+          </datalist> <br>
+          <label for="complaint">Message</label> <br>
+          <textarea></textarea> <br>
+          <label for="who">To Who?</label> <br>
+          <input type="checkbox" id="person1" name="person1" value="human">
+          <label for="who">Darren M. Yu</label> <br>
+          <input type="checkbox" id="person2" name="person2" value="human">
+          <label for="who">Evan L. Dover</label> <br>
+          <input type="checkbox" id="person3" name="person3" value="human">
+          <label for="who">Allan G. Stangler</label> <br>
+          <input type="radio">
+          <label for="proof">Press to Prove You're Not a Bot</label> <br>
+          <button type="button" onclick="alert('We have sent a message')">Submit</button>
+        </fieldset>
+      </form>
 
     </main>
 
